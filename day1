@@ -1,0 +1,36 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a,b,c,d;
+    cout<<"Enter the lengths of the sides of the quadrilateral :";
+    cin>>a>>b>>c>>d;
+    if(a==b&&c==d)
+    {
+        if(a!=c&&a!=d)
+        {
+            if(b!=c&&b!=d)
+            cout<<"YES";
+        }
+    }
+    else if(a==c&&b==d)
+    {
+        if(a!=b&&a!=d)
+        {
+            if(c!=b&&c!=d)
+            cout<<"YES";
+        }
+    }
+    else if(a==d&&b==c)
+    {
+        if(a!=b&&a!=c)
+        {
+            if(d!=b&&d!=c)
+            cout<<"YES";
+        }
+    }
+    else
+    cout<<"NO";
+}
