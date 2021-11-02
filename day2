@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n,m,a,length,width;
+    cout<<"Enter dimensions of the floor (n and m) and length of side of cloth (a): ";
+    cin>>n>>m>>a;
+    length=n/a;
+    width=m/a;
+    if(length%a!=0)
+    {
+        length++;
+    }
+    if(width%a!=0)
+    {
+        width++;
+    }
+    cout<<"Cloth required: "<<length*width<<" pieces";
+}
