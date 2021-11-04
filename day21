@@ -1,0 +1,17 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n,k,sum=0;
+    do
+    {
+        cout<<"Enter Number: ";
+        cin>>n;
+        k=n*n;
+        if(n%3!=0)
+        sum=sum+k;
+    }while(n>0);
+    cout<<"The sum of squares of numbers (not divisible by 3) is : "<<sum-k;
+}
