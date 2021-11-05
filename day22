@@ -1,0 +1,26 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+bool getshape()
+{
+    int l,b,r;
+    cout<<"Enter the length and breadth of the rectangle: ";
+    cin>>l>>b;
+    cout<<"Enter the radius of the circle: ";
+    cin>>r;
+    int k=(l*l)+(b*b);
+    int d=sqrt(k);
+    if(d<=2*r)
+    return true;
+    else
+    return false;
+}
+
+int main()
+{
+    if(getshape()==true)
+    cout<<"True";
+    else
+    cout<<"False";
+}
